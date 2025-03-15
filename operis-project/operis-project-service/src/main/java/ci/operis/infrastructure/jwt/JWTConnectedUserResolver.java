@@ -1,7 +1,6 @@
 package ci.operis.infrastructure.jwt;
 
 import com.nimbusds.jwt.JWTClaimsSet;
-import com.nimbusds.jwt.JWTParser;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 

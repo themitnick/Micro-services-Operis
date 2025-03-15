@@ -6,12 +6,11 @@ import ci.operis.core.domain.CreateProjectCommand;
 import ci.operis.core.domain.Project;
 import ci.operis.core.port.in.CreateProjectUseCase;
 import ci.operis.infrastructure.jwt.JWTConnectedUserResolver;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import javax.validation.Valid;
 
 @RequiredArgsConstructor
 @RestController

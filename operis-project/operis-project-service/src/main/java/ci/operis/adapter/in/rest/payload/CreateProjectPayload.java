@@ -1,6 +1,6 @@
 package ci.operis.adapter.in.rest.payload;
 
-import javax.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotBlank;
 
 public record CreateProjectPayload (
         @NotBlank
