@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: operis-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: operis-project-service
+          uri: lb://operis-project-service
+          predicates:
+            - Path=/operis-project/**
+          filters:
+            - StripPrefix=1
+
+server:
+  port: 8080
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    fetch-registry: true
+    register-with-eureka: false
