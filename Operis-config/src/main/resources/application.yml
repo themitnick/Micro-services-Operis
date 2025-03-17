@@ -1,0 +1,16 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: operis-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: '<your-repo>'
+          username: '<your-username>'
+          password: '<your-password>'
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

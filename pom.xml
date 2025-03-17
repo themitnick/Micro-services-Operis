@@ -20,6 +20,7 @@
         <module>operis-project</module>
         <module>Operis-discovery</module>
         <module>Operis-gateway</module>
+        <module>Operis-config</module>
     </modules>
 
     <properties>
