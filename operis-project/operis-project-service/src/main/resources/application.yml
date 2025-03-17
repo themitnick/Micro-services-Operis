@@ -1,6 +1,8 @@
 server:
   port: 9090
 spring:
+  application:
+    name: operis-project-service
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5433/operis
@@ -14,6 +16,7 @@ spring:
         hibernate:
           dialect: org.hibernate.dialect.PostgreSQLDialect
 
+
 jwt:
   secret:
     code: 98562gfdijnglkndfklg+8945445g45eg45
@@ -22,3 +25,9 @@ logging:
   level:
     root: info
     ci.operis: info
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    fetch-registry: true
+    register-with-eureka: true
