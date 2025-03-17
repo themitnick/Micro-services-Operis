@@ -3,23 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
-    <groupId>ci.operis</groupId>
-    <artifactId>Operis</artifactId>
-    <version>1.0-SNAPSHOT</version>
-
-    <packaging>pom</packaging>
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.3.2</version>
-        <relativePath/>
+        <groupId>ci.operis</groupId>
+        <artifactId>Operis</artifactId>
+        <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <modules>
-        <module>operis-project</module>
-        <module>Operis-discovery</module>
-    </modules>
+    <artifactId>Operis-discovery</artifactId>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
@@ -29,10 +19,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.36</version>
-            <optional>true</optional>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+            <version>4.1.3</version>
         </dependency>
     </dependencies>
 
